@@ -1,5 +1,5 @@
 #Flyleaf
-*An app for reading things!*
+*An app for reading Manga!*
 
 -----
 ##Front End

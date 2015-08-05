@@ -1,4 +1,17 @@
 {
-    "browser": true,
-    "devel": true
+
+  "browser": true,
+  "esnext": true,
+  "globals": {
+    "Flyleaf": true,
+    "Display": true,
+    "Data": true,
+    "page": true
+    },
+  "jquery": true,
+  "globalstrict": true,
+  "quotmark": true,
+  "undef": true,
+  "unused": true,
+  "devel": true
 }

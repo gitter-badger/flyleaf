@@ -9,5 +9,6 @@
   "jquery": true,
   "globals": {
     "page": true,
+    "Flyleaf": true
     }
 }

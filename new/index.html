@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Flyleaf | jQuery Mobile</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" /> -->
+    <link rel="stylesheet" type="text/css" href="/components/jquery-mobile-flat-ui-theme/generated/jquery.mobile.flatui.css" />
+    <script src="http://code.jquery.com/jquery-2.1.4.min.js"></script>
+    <script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+    <script id="panel-init">
+        $(function() {
+            $( "body>[data-role='panel']" ).panel();
+        });
+    </script>
+</head>
+<body>
+
+
+    <!-- Login -->
+    <div data-role="page" id="page_login">
+        <div data-role="header">
+            <h1>Flyleaf.co</h1>
+        </div>
+
+
+        <div role="main" class="ui-content">
+            <h3 class="">Sign In</h1>
+
+            <form>
+
+            <!--     <label for="input_login_email">Email</label> -->
+                <input type="email" data-clear-btn="true" name="input_login_email" id="input_login_email" value="" placeholder="Email">
+                
+                <!-- <label for="input_login_password">Password</label> -->
+                <input type="password" data-clear-btn="true" name="input_login_password" id="input_login_password" value="" autocomplete="off" placeholder="Password">
+
+                <button class="ui-shadow ui-btn ui-btn-a ui-corner-all">Login</button>
+                <button class="ui-shadow ui-btn ui-btn- ui-corner-all">Sign up</button>
+
+            </form>
+
+            <img src="/images/lalabadie_flyleaf.png">
+        </div>
+
+
+        <!-- <div data-role="footer">
+            <h4>Page Footer</h4>
+        </div>
+         -->
+    </div>
+
+
+    <!-- User Library -->
+    <div data-role="page" id="page_user_library">
+        <div data-role="header">
+            <h1>My Library</h1>
+
+            <a href="#panel_left" class="ui-btn ui-icon-bars ui-btn-icon-left ui-btn-icon-notext" role="button" data-role="button">Left</a>
+
+            <!-- <a href="#panel_left" class="ui-nodisc-icon ui-alt-icon ui-btn-left ui-btn ui-icon-bars ui-btn-icon-notext ui-corner-all" data-role="button" role="button">Menu</a> -->
+        </div>
+
+
+        <div role="main" class="ui-content">
+            <p>I'm the second in the source order so I'm hidden when the page loads. I'm just shown if a link that references my id is beeing clicked.</p>
+            <p><a href="#page_login">Back to page_login</a></p>
+
+            <a href="#panel_left" class="ui-btn ui-shadow ui-corner-all ui-btn-inline ui-mini">panel_left</a>
+        </div>
+
+
+        <div data-role="footer">
+            <h4>Page Footer</h4>
+        </div>
+    </div>
+
+
+    <!-- Push Left Panel  -->
+    <div data-role="panel" id="panel_left" data-position="left" data-display="push" data-theme="a">
+
+        <h3>Left Panel: Overlay</h3>
+        <p>This panel is positioned on the left with the overlay display mode. The panel markup is <em>after</em> the header, content and footer in the source order.</p>
+        <p>To close, click off the panel, swipe left or right, hit the Esc key, or use the button below:</p>
+        <a href="#demo-links" data-rel="close" class="ui-btn ui-shadow ui-corner-all ui-btn-a ui-icon-delete ui-btn-icon-left ui-btn-inline">Close panel</a>
+
+    </div><!-- /leftpanel3 -->
+
+
+</body>
+</html>

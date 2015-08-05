@@ -1,4 +1,3 @@
-/*global Display, Data, page, console*/
 'use strict';
 
 var Flyleaf = function() {
@@ -8,7 +7,7 @@ var Flyleaf = function() {
     var display = new Display(data);
 
     var _initalLoad = false;
-
+    
     // Runs on every page change
     this.init = function (context, next) {
         if (_initalLoad) {

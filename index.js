@@ -28,8 +28,10 @@ app.use(bodyParser.urlencoded({extended: true}));
 app.use(multer());
 
 app.use(morgan('dev'));
-app.use(express.static(path.join(__dirname + '/app')));
+// app.use(express.static(path.join(__dirname + '/app')));
+app.use(express.static(path.join(__dirname + '/new')));
 app.use('/docs', express.static(path.join(__dirname + '/docs/flyleaf/0.1.0')));
+app.use('/components', express.static(path.join(__dirname + '/bower_components')));
 app.use('/material', express.static(path.join(__dirname + '/node_modules/materialize-css')));
 
 routes(app);
